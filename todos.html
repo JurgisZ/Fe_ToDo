@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ToDos Manager</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/todosPopup.css">
+        <link rel="stylesheet" href="styles/todos.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="userSettingsBar" class="todoTopBar">
+            <input type="button" id="logOutButton" class="logOutButton" value="LogOut">
+        </div>
+        <div>
+            <h1 class ="todosHeading">Welcome to ToDo notes manager</h1>
+            <input type="button" id="openTodoPopup" value="New ToDo note">
+        </div>
+        <!-- POPUP Form New TODO -->
+        <div class="todoPopup" id="todoPopup">
+            <table class="newTodoTable">
+                <thead>
+                    <tr><td colspan="3"><h2 class="newTodoHeading" id="newTodoHeading">New ToDo note</h2></td></tr>
+                </thead>
+                <tbody><form id="todoPopupNewForm">
+                    <tr>
+                        <td>
+                            <p class="newTodoCaption"><strong>ToDo Category:</strong></p>
+                            <input type="text" class="newTodoCategoryInput" id="todoCategory" maxlength="22" placeholder="Type of activity or goal." required>                                    
+                        </td>
+                        <td>
+                            <p class="newTodoCaption"><strong>Priority:</strong></p>
+                            <select class="newTodoPrioritySelector" id="todoPrioritySelector" required>
+                                <option value="1">Not very important</option>
+                                <option value="2">Somewhat important</option>
+                                <option value="3" selected="selected">Important</option>
+                                <option value="4">Very important</option>
+                                <option value="5">Do or die trying!</option>
+                            </select>
+                        </td>
+                        <td>
+                            <p class="newTodoCaption"><strong>End date:</strong></p>
+                            <input type="datetime-local" class="newTodoDateSelector" id="dateTimeInput" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p class="newTodoCaptionText" id="newTodoTextArea"><strong>ToDo text:</strong></p>
+                            <textarea class="newTodoTextArea" id="todoContent" placeholder="Enter your todo text here." maxlength="256" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" class="newTodoButton" value="Save" id="submitTodoBtn">
+                            <input type="submit" class="newTodoButton" value="Discard" id="discardTodoBtn">
+                        </td>
+                        <td class="newTodoFormErr" id="todoFormMsg">Form error msg</td>
+                    </tr>
+                </form></tbody>
+            </table>
+        </div>
+
+        <!-- POPUP Form EDIT TODO -->
+        <div class="todoPopup" id="todoPopupEdit">
+            <table class="newTodoTable">
+                <thead>
+                    <tr><td colspan="3"><h2 class="newTodoHeading" id="newTodoHeadingEdit">New ToDo note</h2></td></tr>
+                </thead>
+                <tbody><form id="todoPopupNewFormEdit">
+                    <tr>
+                        <td>
+                            <p class="newTodoCaption"><strong>ToDo Category:</strong></p>
+                            <input type="text" class="newTodoCategoryInput" id="todoCategoryEdit" maxlength="22" placeholder="Type of activity or goal." required>                                    
+                        </td>
+                        <td>
+                            <p class="newTodoCaption"><strong>Priority:</strong></p>
+                            <select class="newTodoPrioritySelector" id="todoPrioritySelectorEdit" required>
+                                <option value="1">Not very important</option>
+                                <option value="2">Somewhat important</option>
+                                <option value="3" selected="selected">Important</option>
+                                <option value="4">Very important</option>
+                                <option value="5">Do or die trying!</option>
+                            </select>
+                        </td>
+                        <td>
+                            <p class="newTodoCaption"><strong>End date:</strong></p>
+                            <input type="datetime-local" class="newTodoDateSelector" id="dateTimeInputEdit" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p class="newTodoCaptionText" id="newTodoTextAreaEdit"><strong>ToDo text:</strong></p>
+                            <textarea class="newTodoTextArea" id="todoContentEdit" placeholder="Enter your todo text here." maxlength="256" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" class="newTodoButton" value="Save" id="submitTodoBtnEdit">
+                            <input type="submit" class="newTodoButton" value="Discard" id="discardTodoBtnEdit">
+                        </td>
+                        <td class="newTodoFormErr" id="todoFormMsgEdit">Form error msg</td>
+                    </tr>
+                </form></tbody>
+            </table>
+        </div>
+
+
+        <div>
+            <iframe src="about:blank" class="todosFrame" id="todosFrame"></iframe>
+        </div>
+        <script src="scripts/configuration.js"></script>
+        <script src="scripts/loginCheck.js"></script>
+        <script src="scripts/todos.js"></script>
+    </body>
+</html>

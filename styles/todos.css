@@ -1,0 +1,75 @@
+.todoTopBar {
+    vertical-align: top;
+    text-align: right;
+    width: 80%; 
+    
+}
+
+body {
+    text-align: center;
+    
+}
+
+.todosFrame {
+    width: 560px;
+    border-collapse: collapse;
+    border: 0px;
+    height: 600px;
+    text-align: center;
+}
+
+.todosTable {
+    margin: 0px;
+    padding: 0px;
+    width: 530px;
+    border: 2px, solid, black;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.todosContent {
+    text-align: center;
+}
+
+.todosHeading {
+    text-align: center;
+}
+
+td {
+    border: 0px, solid, black;
+    padding: 0px;
+    margin: 0px;
+    /* text-align: left; */
+}
+
+.todoTopRowTd {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 1px, solid, rgba(131, 130, 130, 0.263);
+    width: 145px;
+}
+
+.spacerTd {
+    width:40px
+}
+
+
+.todoContentText {
+    width: 500px;
+    padding-left: 10px;
+    padding-top: 10px;
+    vertical-align: top;
+    text-align: left;
+    border: 0px, solid, black;
+}
+
+.todoBtn {
+    box-sizing: border-box;
+    width: 80px;
+    margin:5px;
+    margin-top: 0px;
+}
+

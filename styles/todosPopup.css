@@ -1,0 +1,91 @@
+.todoPopup {
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    margin-left: -290px;
+    background-color: white;
+}
+
+.newTodoTable {
+    margin: 0px;
+    padding: 0px;
+    width: 530px;
+    border: 1px, solid, black;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    margin: 10px;
+    border: 0px;
+    border-style: solid;
+    border: color(black);
+    
+}
+
+.newTodoHeading {
+    margin: 0px;
+    margin-bottom: 15px;
+    padding: 0px;
+}
+
+.newTodoCaption {
+    margin: 0px;
+    padding: 0px;
+}
+
+.newTodoSelector {
+    margin: 0px;
+    padding: 0px;
+}
+
+.newTodoCaption {
+    margin: 0px;
+    padding: 0px;
+}
+
+.newTodoCaptionText {
+    margin: 0px;
+    margin-top: 15px;
+    padding: 0px;
+}
+
+.newTodoTextArea {
+    margin: 0px;
+    padding: 0px;
+    resize: none;
+    width: 560px;
+    height: 70px;
+    box-sizing: border-box;
+    border: 1px, solid, black;
+    border-radius: 4px;
+}
+
+.newTodoButton {
+    margin: 0px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    padding: 0px;
+    width: 150px;
+}
+
+.newTodoCategoryInput {
+    width: 170px;
+}
+
+.newTodoPrioritySelector {
+    width: 170px;
+}
+
+.newTodoDateSelector {
+    width: 170px;
+}
+
+.newTodoFormErr {
+    text-align: left;
+    vertical-align: top;
+    color: rgb(203, 14, 14);
+}

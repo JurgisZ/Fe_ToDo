@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- TEMPORARY STYLE! -->
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="contentBox">
+            <form onsubmit="return false">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>
+                                <h1>Welcome to TODO notes</h1>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="loginStatus">Please fill registration form</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="registrationStatusText"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                User name:<br>
+                                <input type="text" id="userNameNewField" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                E-mail address<br>
+                                <input type="email" id="userEmailNewField" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- PAKEISTI FIELD TYPE I PASSWORD -->
+                                Password:<br>
+                                <input type="text" id="userPasswordField1" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- PAKEISTI FIELD TYPE I PASSWORD -->
+                                 Confirm password:<br>
+                                <input type="text" id="userPasswordField2" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- <input type="submit" id="submitRegistration" value="Register"> -->
+                                <input type="submit" id="submitRegistrationBtn" value="Register">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" id="returnToIndexBtn" value ="Back to Index">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+
+        </div>
+        <script src="scripts/configuration.js"></script>
+        <script src="scripts/registration.js"></script>
+    </body>
+</html>

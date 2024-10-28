@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="contentBox">
+            <form id="loginForm" onsubmit="return false">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>
+                                <h1>Welcome to TODO notes</h1>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="loginStatus">Please log in to continue</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="loginStatusText"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                User name:<br>
+                                <input type="text" id="userNameField" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Password:<br>
+                                <input type="text" id="userPasswordField" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- <input type="submit" id="submitLogin" value="Login"> -->
+                                <input type="submit" id="submitLogin" value="Login">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" id="registerBtn" value="Register">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+
+        </div>
+        <!-- async defer -->
+        <script src="scripts/configuration.js"></script>
+        <script src="scripts/loginCheck.js"></script>
+        <script src="scripts/login.js"></script> 
+    </body>
+</html>
